@@ -1,0 +1,19 @@
+.logo {
+    align-items: center;
+    display: flex;
+
+    svg {
+        height: auto;
+        width: 100%;
+    }
+
+    @media (min-width: $smartphone) {
+        height: 100vh;
+    }
+
+    @media (max-width: $smartphone) {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

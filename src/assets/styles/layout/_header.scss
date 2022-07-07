@@ -1,15 +1,17 @@
 #Header {
     --width: 100%;
-    --height: var(--header-height);
-    --color: var(--secondary);
-    --bg: var(--primary);
-    --padding-v: var(--padding-xs);
+    --height: auto; //var(--header-height);
+    --color: var(--black); //var(--secondary);
+    --bg: transparent; //var(--primary);
+    --padding-v: var(--padding-s);
     --padding-h: var(--padding-xs);
     --font-size: var(--font-size-base);
 }
 
 #Header {
+    @include font-sans();
     @include z-index($z-index-header);
+
     position: fixed;
     width: var(--width);
     height: var(--height);
@@ -24,53 +26,20 @@
     color: var(--color);
     background-color: var(--bg);
 
-    transform: translate3d(0, var(--y-header), 10px);
-}
+    // transform: translate3d(0, var(--y-header), 10px);
 
-#Header > nav {
-    display: flex;
+    text-transform: uppercase;
+    font-size: var(--font-size-xsmall);
 
-    a {
-        @include font-sans(1.2);
-        font-size: var(--font-size);
-        color: inherit;
-        margin: 0 1em;
-
-        &[aria-current="page"] {
-          pointer-events: none;
-        }
+    p {
+      text-align: center;
     }
-}
-
-@media (max-width: $smartphone) {
-  #Header {
-    --font-size: #{(16px / 16px) * 1rem};
-
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-
-    > .title {
-      grid-column: 1 / 2;
-      grid-row: 1 / 2;
+    
+    span {
+        @include font-sans-secondary();
+      
+        color: currentColor;
+        font-size: var(--font-size-small);
+        margin: 0 rem(3);
     }
-
-    > .date {
-      grid-column: 1 / 2;
-      grid-row: 2 / 3;
-
-      align-self: flex-end;
-    }
-  }
-
-  #Header > nav {
-    grid-column: 2 / 3;
-    grid-row: 1 / 3;
-    grid-template-columns: repeat(1, 1fr);
-
-    text-align: right;
-
-    a:not(:last-of-type) {
-      margin-bottom: .4em;
-    }
-  }
 }

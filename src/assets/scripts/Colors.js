@@ -15,8 +15,8 @@ export const Colors = {
         str: "palette-red"
     },
     "primary": {
-        hex: 0x999,
-        css: "#999",
+        hex: 0x808080,
+        css: "#808080",
         str: "palette-primary"
     },
     "secondary": {

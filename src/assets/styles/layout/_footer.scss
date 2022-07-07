@@ -1,22 +1,42 @@
 #Footer {
-    --font-size: var(--font-size-small);
-    padding: var(--padding-s) var(--padding-xs) var(--padding-xl);
+    --width: 100%;
+    --height: auto; //var(--header-height);
+    --color: var(--black); //var(--secondary);
+    --bg: transparent; //var(--primary);
+    --padding-v: var(--padding-s);
+    --padding-h: var(--padding-xs);
 }
 
-#Footer > nav {
+#Footer {
+    @include font-sans();
+    @include z-index($z-index-header);
+
+    position: fixed;
+    width: var(--width);
+    height: var(--height);
+    right: 0;
+    bottom: 0;
+    padding: var(--padding-v) var(--padding-h);
+
     display: flex;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
 
+    color: var(--color);
+    background-color: var(--bg);
+
+    text-transform: uppercase;
+    font-size: var(--font-size-xsmall);
+    
     a {
-        @include font-sans(1.2);
-        font-size: var(--font-size);
-        color: inherit;
-        margin: 0 1em;
+        color: currentColor;
+        text-decoration: none;
     }
-}
 
-@media (max-width: $smartphone) {
-  #Footer {
-      --font-size: rem(12px);
-  }
+    span {
+        @include font-sans-secondary();
+      
+        font-size: var(--font-size-small);
+        margin-left: rem(25) ;
+    }
 }

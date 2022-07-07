@@ -1,5 +1,5 @@
 import { Scroll } from '../_app/cuchillo/scroll/Scroll';
-import Scrollbar from '../_app/cuchillo/scroll/Scrollbar';
+// import Scrollbar from '../_app/cuchillo/scroll/Scrollbar';
 import Page from '../_app/cuchillo/pages/Page';
 import { ControllerPage } from '../_app/cuchillo/pages/ControllerPage';
 import Wrap from '../layout/Wrap';
@@ -19,7 +19,7 @@ export default class Default extends Page {
   //SHOW
   beforeShow() {
     Scroll.init(Scroll.AXIS_Y, {smooth:!isMobile, multiplicator:1});
-    Scroll.setScrollbar(new Scrollbar());
+    // Scroll.setScrollbar(new Scrollbar());
     Scroll.start();
   }
 
