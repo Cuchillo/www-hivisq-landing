@@ -1,29 +1,19 @@
 @font-face {
-  font-family: 'FKGrotesk-Regular';
+  font-family: 'HelveticaNeue-Roman';
   src:
-    url('FKGrotesk-Regular.woff2') format('woff2'),
-    url("FKGrotesk-Regular.woff") format("woff");
+    url('HelveticaNeue-Roman.woff2') format('woff2'),
+    url("HelveticaNeue-Roman.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'FKGrotesk-Medium';
+  font-family: 'BebasNeue';
   src:
-    url('FKGrotesk-Medium.woff2') format('woff2'),
-    url("FKGrotesk-Medium.woff") format("woff");
-  font-weight: 500;
+    url('BebasNeue.woff2') format('woff2'),
+    url("BebasNeue.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
-}
-
-@font-face {
-    font-family: "FKGrotesk-ThinItalic";
-    src:
-        url("FKGrotesk-ThinItalic.woff2") format("woff2"),
-        url("FKGrotesk-ThinItalic.woff") format("woff");
-    font-weight: 200;
-    font-style: italic;
-    font-display: swap;
 }

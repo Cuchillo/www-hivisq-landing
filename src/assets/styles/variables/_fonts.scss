@@ -1,7 +1,7 @@
 :root {
-    --font-sans: 'FKGrotesk-Regular', sans-serif;
-    --font-sans-bold: 'FKGrotesk-Medium', sans-serif;
-    --font-sans-italic: 'FKGrotesk-ThinItalic', sans-serif;
+    --font-sans: 'HelveticaNeue-Roman', sans-serif;
+    --font-sans: 'BebasNeue', sans-serif;
+    --font-sans: 'FKGrotesk-ThinItalic', sans-serif;
 
     --font-size-xxlarge: #{(360px / 16px) * 1rem};
     --font-size-large: #{(80px / 16px) * 1rem};
@@ -26,19 +26,6 @@
 @mixin font-sans($line-height:0) {
     font-family: var(--font-sans);
     font-weight: normal;
-    @if $line-height > 0 { line-height: $line-height  }
-    @else { line-height: var(--line-height-sans);  }
-}
-@mixin font-sans-bold($line-height:0) {
-  font-family: var(--font-sans-bold);
-  font-weight: 500;
-    @if $line-height > 0 { line-height: $line-height  }
-    @else { line-height: var(--line-height-sans);  }
-}
-@mixin font-sans-italic($line-height:0) {
-  font-family: var(--font-serif);
-  font-weight: 200;
-  font-style: italic;
     @if $line-height > 0 { line-height: $line-height  }
     @else { line-height: var(--line-height-sans);  }
 }
