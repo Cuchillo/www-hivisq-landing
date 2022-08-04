@@ -1,20 +1,21 @@
 :root {
-    --font-sans: 'HelveticaNeue-Roman', sans-serif;
-    --font-sans-secondary: 'BebasNeue', sans-serif;
+    --font-sans: 'PPTelegraf-Regular', sans-serif;
+    --font-serif: 'GT-Alpina-Condensed-Thin', serif;
+    --font-serif-secondary: 'GT-Alpina-Condensed-Italic', serif;
 
     --font-size-xxlarge: #{(360px / 16px) * 1rem};
     --font-size-large: #{(80px / 16px) * 1rem};
     --font-size-xlarge: #{(130px / 16px) * 1rem};
-    --font-size-mid: #{(45px / 16px) * 1rem};
+    --font-size-mid: #{(42px / 16px) * 1rem};
     --font-size-base: #{(18px / 16px) * 1rem};
-    --font-size-h2: #{(80px / 16px) * 1rem};
-    --font-size-h3: #{(40px / 16px) * 1rem};
+    --font-size-footer: #{(24px / 16px) * 1rem};
+    --font-size-header: #{(24px / 16px) * 1rem};
     --font-size-small: #{(13px / 16px) * 1rem};
     --font-size-xsmall: #{(12px / 16px) * 1rem};
 
-    --line-height-sans: 1.2;
-    --line-height-sans-secondary: 1.18;
-    --letter-spacing: -0.06em;
+    --line-height-sans: .9;
+    --line-height-serif-secondary: 1;
+    --letter-spacing: -0.02em;
     --letter-spacing-secondary: 0.05em;
 
     font-size: 1.1111vw;
@@ -32,10 +33,18 @@
     @else { line-height: var(--line-height-sans);  }
 }
 
-@mixin font-sans-secondary($line-height: 0) {
-    font-family: var(--font-sans-secondary);
+@mixin font-serif($line-height: 0) {
+    font-family: var(--font-serif);
     font-weight: normal;
     letter-spacing: var(--letter-spacing-secondary);
     @if $line-height > 0 { line-height: $line-height  }
-    @else { line-height: var(--line-height-sans-secondary);  }
+    @else { line-height: var(--line-height-serif-secondary);  }
+}
+
+@mixin font-serif-secondary($line-height: 0) {
+    font-family: var(--font-serif-secondary);
+    font-weight: normal;
+    letter-spacing: var(--letter-spacing-secondary);
+    @if $line-height > 0 { line-height: $line-height  }
+    @else { line-height: var(--line-height-serif-secondary);  }
 }

@@ -7,12 +7,16 @@ html{
 body{
     width: 100%;
     min-height: 100%;
+    background-image:  url("assets/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 
     main {
         width: 100%;
+        padding: var(--padding-main-v) var(--padding-main-h);
     }
 
-    &:not(.__scroll-manual){
+    /*&:not(.__scroll-manual){
         overflow: hidden;
 
         main {
@@ -28,6 +32,36 @@ body{
         overflow-y: scroll;
         overflow-x: hidden;
         -webkit-overflow-scrolling: touch;
+    }*/
+
+    p {
+        color: var(--pink);
+
+        .--white {
+            color: var(--white);
+        }
+    }
+
+    .--main-text {
+        @include font-sans();
+        font-size: var(--font-size-mid);
+    }
+
+    .filter-mask {
+        margin: var(--filter-margin) auto;
+        width: calc(100% - var(--padding-m));
+        height: var(--filter-height);
+
+
+        border-radius: var(--padding-xs);
+        background-color: var(--grey);
+        mix-blend-mode: multiply;
+        opacity: 0.55;
+    }
+
+    .hivisq__logo {
+        padding: 0 var(--padding-xxl);
+        padding-top: var(--padding-l);
     }
 }
 

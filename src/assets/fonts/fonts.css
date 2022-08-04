@@ -1,18 +1,28 @@
 @font-face {
-  font-family: 'HelveticaNeue-Roman';
+  font-family: 'PPTelegraf-Regular';
   src:
-    url('HelveticaNeue-Roman.woff2') format('woff2'),
-    url("HelveticaNeue-Roman.woff") format("woff");
+    url('PPTelegraf-Regular.woff2') format('woff2'),
+    url("PPTelegraf-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'BebasNeue';
+  font-family: 'GT-Alpina-Condensed-Thin';
   src:
-    url('BebasNeue.woff2') format('woff2'),
-    url("BebasNeue.woff") format("woff");
+    url('GT-Alpina-Condensed-Thin.woff2') format('woff2'),
+    url("GT-Alpina-Condensed-Thin.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GT-Alpina-Condensed-Thin-Italic';
+  src:
+    url('GT-Alpina-Condensed-Thin-Italic.woff2') format('woff2'),
+    url("GT-Alpina-Condensed-Thin-Italic.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;

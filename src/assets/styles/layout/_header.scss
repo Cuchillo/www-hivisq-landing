@@ -1,6 +1,6 @@
 #Header {
     --width: 100%;
-    --height: auto; //var(--header-height);
+    --height: auto;
     --color: var(--black); //var(--secondary);
     --bg: transparent; //var(--primary);
     --padding-v: var(--padding-s);
@@ -17,29 +17,22 @@
     height: var(--height);
     right: 0;
     top: 0;
-    padding: var(--padding-v) var(--padding-h);
+    padding:var(--padding-h);
 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
 
     color: var(--color);
     background-color: var(--bg);
 
-    // transform: translate3d(0, var(--y-header), 10px);
-
-    text-transform: uppercase;
-    font-size: var(--font-size-xsmall);
-
-    p {
-      text-align: center;
-    }
+    font-size: var(--font-size-header);
     
     span {
-        @include font-sans-secondary();
-      
-        color: currentColor;
-        font-size: var(--font-size-small);
-        margin: 0 rem(3);
+        @include font-sans();
+    }
+
+    figure {
+        width: var(--header-logo);
     }
 }

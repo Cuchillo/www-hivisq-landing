@@ -1,7 +1,8 @@
 :root {
-  --white: #ffffff;
+  --white: #F6F6F6;
   --black: rgba(6,8,4,1);
-  --grey: #808080;
+  --pink: #FF9CB4;
+  --grey: #919190;
 
   --primary: var(--black);
   --secondary: var(--white);
@@ -14,7 +15,7 @@
 
 .palette-primary {
     --primary: var(--black);
-    --secondary: var(--grey);
+    --secondary: var(--white);
 }
 
 .palette-black {

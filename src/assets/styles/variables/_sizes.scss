@@ -1,6 +1,7 @@
 :root {
   --y-header: 0;
 
+  --padding-xxl: #{(250px / 16px) * 1rem};
   --padding-xl: #{(120px / 16px) * 1rem};
   --padding-l: #{(90px / 16px) * 1rem};
   --padding-m: #{(60px / 16px) * 1rem};
@@ -8,7 +9,13 @@
   --padding-xs: #{(15px / 16px) * 1rem};
   --padding-xxs: #{(8px / 16px) * 1rem};
 
-  --header-height:#{(77px / 16px) * 1rem};
+  --filter-margin: #{(77px / 16px) * 1rem};
+  --filter-height: #{(518px / 16px) * 1rem};
+  --header-logo: #{(180px / 16px) * 1rem};
+
+
+  --padding-main-v: #{(155px / 16px) * 1rem};
+  --padding-main-h: #{(335px / 16px) * 1rem};
 }
 
 @media (max-width: $smartphone) {
