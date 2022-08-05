@@ -8,7 +8,7 @@ module.exports = {
   type: "website",
   image: "/assets/social/facebook-1200x630.jpg",
   image_twitter: "/assets/social/twitter-600x330.jpg",
-  google_analytics_code: "xxxxx",
+  google_analytics_code: "",
   /* URL FRONT */
   url: "https://www.hivisq.xyz",
   /* URL BACK */
