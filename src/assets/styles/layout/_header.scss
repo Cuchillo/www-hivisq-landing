@@ -21,7 +21,7 @@
 
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 
     color: var(--color);
     background-color: var(--bg);
@@ -34,5 +34,16 @@
 
     figure {
         width: var(--header-logo);
+    }
+}
+
+@media (max-width: $smartphone) {
+    #Header {
+        --padding-h: var(--padding-s);
+        font-size: 1.25rem;
+
+        figure {
+            width: 40%;
+        }
     }
 }

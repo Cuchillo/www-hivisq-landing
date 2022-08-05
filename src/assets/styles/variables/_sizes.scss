@@ -16,6 +16,7 @@
 
   --padding-main-v: #{(155px / 16px) * 1rem};
   --padding-main-h: #{(335px / 16px) * 1rem};
+  --padding-main-h-mobile: #{(200px / 16px) * 1rem};
 }
 
 @media (max-width: $smartphone) {

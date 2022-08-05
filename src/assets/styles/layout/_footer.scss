@@ -33,3 +33,18 @@
         color: var(--white);
     }
 }
+
+@media (max-width: $smartphone) {
+    #Footer {
+        padding: var(--padding-v) var(--padding-s);
+
+        font-size: 14px;
+        column-gap: var(--padding-xxs);
+    }
+}
+
+@media (max-width: $smartphoneSmall) {
+    #Footer {
+        font-size: 13px;
+    }
+}

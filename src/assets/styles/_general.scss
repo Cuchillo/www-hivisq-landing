@@ -9,9 +9,10 @@ body{
     min-height: 100%;
     background-image:  url("assets/images/background.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background-position: center center;
 
-    main {
+    .wrap {
         width: 100%;
         padding: var(--padding-main-v) var(--padding-main-h);
     }
@@ -26,15 +27,21 @@ body{
           top:0;
           left:0;
         }
-    }
+    }*/
 
     &.__scroll-manual {
         overflow-y: scroll;
         overflow-x: hidden;
         -webkit-overflow-scrolling: touch;
-    }*/
+    }
 
-    p {
+    .hero-icon {
+        margin: 0 auto var(--filter-margin) auto;
+        width: 25%;
+    }
+
+    p, a {
+        text-decoration: none;
         color: var(--pink);
 
         .--white {
@@ -60,8 +67,35 @@ body{
     }
 
     .hivisq__logo {
-        padding: 0 var(--padding-xxl);
-        padding-top: var(--padding-l);
+        padding: var(--padding-l) var(--padding-xxl) 0 var(--padding-xxl);
     }
 }
 
+@media (max-width: $smartphone) {
+    body {
+        .wrap {
+            padding: var(--padding-main-h-mobile) var(--padding-s) var(--padding-m) var(--padding-s);
+
+            .hero-icon {
+                width: 65%;
+            }
+        }
+
+        .--main-text {
+            --font-size-text: #{(34px / 16px) * 1rem};
+            font-size: var(--font-size-text);
+        }
+
+        .filter-mask {
+            margin: var(--padding-xs) auto;
+            border-radius: 10px;
+            height: 480px;
+        }
+
+        .hivisq__logo {
+            padding: var(--padding-m) 0;
+            width: 100%;
+        }
+    
+    }
+}
