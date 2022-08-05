@@ -2,8 +2,8 @@ const timestamp = new Date();
 
 module.exports = {
   lang: "es",
-  name: "Hivisq | smart views",
-  title: "Hivisq | smart views",
+  name: "Hivisq | Smart Conscious Comfort",
+  title: "Hivisq | Smart Conscious Comfort",
   description: "Hivisq",
   type: "website",
   image: "/assets/social/facebook-1200x630.jpg",
